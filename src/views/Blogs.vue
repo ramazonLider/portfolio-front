@@ -13,31 +13,31 @@
             </a>
             <ul class="nav navbar-nav">
                 <li class="nav-item navbar-dropdown navbar-dropdown-mega">
-                    <a to="/" class="nav-link">
+                    <RouterLink to="/" class="nav-link">
                         <span class="nav-link-name">home</span>
                         <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                    </a>
+                    </RouterLink>
                 </li>
                 <li class="nav-item navbar-dropdown">
-                    <a to="{% url 'projects' %}" class="nav-link">
+                    <RouterLink to="/projects" class="nav-link">
                         <span class="nav-link-name">projects</span>
                         <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                    </a>
+                    </RouterLink>
                 </li>
                 <li class="nav-item navbar-dropdown active">
-                    <a to="{% url 'blogs' %}" class="nav-link">
+                    <RouterLink to="/blogs" class="nav-link">
                         <span class="nav-link-name">blogs</span>
                         <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                    </a>
+                    </RouterLink>
                 </li>
             </ul>
             <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center">
@@ -214,7 +214,7 @@
                         <div v-for="blog in blogs" v-bind:key="blog.id"
                             class="card card-blog card-horizontal card-md isotope-item" :data-filters="blog.part.name">
                             <RouterLink to="" class="card-img">
-                                <img :src="blog.image" alt="">
+                                <img :src="blog.photo" alt="">
                             </RouterLink>
                             <div class="card-body">
                                 <RouterLink to="" class="card-title h5">{{ blog.name }}</RouterLink>

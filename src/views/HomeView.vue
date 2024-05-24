@@ -22,22 +22,22 @@
           </RouterLink>
         </li>
         <li class="nav-item navbar-dropdown">
-          <RouterLink to="{% url 'projects' %}" class="nav-link">
+          <a href="/projects" class="nav-link">
             <span class="nav-link-name">projects</span>
             <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-          </RouterLink>
+          </a>
         </li>
         <li class="nav-item navbar-dropdown">
-          <RouterLink to="{% url 'blogs' %}" class="nav-link">
+          <a href="/blogs" class="nav-link">
             <span class="nav-link-name">blogs</span>
             <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-          </RouterLink>
+          </a>
         </li>
       </ul>
       <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center text-white">
@@ -107,24 +107,24 @@
                 </RouterLink>
               </li>
               <li class="nav-item navbar-collapse">
-                <RouterLink to="projects/" class="nav-link collapsed">
+                <a href="projects/" class="nav-link collapsed">
                   <span class="nav-link-name">projects</span>
                   <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
-                </RouterLink>
+                </a>
               </li>
               <li class="nav-item navbar-collapse">
-                <RouterLink to="blogs/" class="nav-link collapsed">
+                <a href="blogs/" class="nav-link collapsed">
                   <span class="nav-link-name">blogs</span>
                   <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
-                </RouterLink>
+                </a>
               </li>
             </ul>
           </div>
